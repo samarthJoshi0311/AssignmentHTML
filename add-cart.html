@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .card{
+            height: 500px;
+            width: 300px;
+            border: 1px solid ;
+            margin: 100px auto;
+            padding: 33px;
+            position: relative;
+            /* overflow: hidden; */
+        }
+        .img{
+            background: url(om-namah-shivay-tshirt.jpg);
+            height: 250px;
+            width: 230px;
+            background-size: 100% 100%;
+            /* background-repeat: no-repeat; */
+            /* margin: 100px auto; */
+            /* transform: translate(0px ,-50px); */
+          }
+          .new{
+            background: lightcoral;
+            height: 25px;
+            width: 40px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            text-align: center;
+            line-height: 25px;
+
+          }
+          .view{
+            height: 50px;
+            width: 300px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 45px;
+            background: black;
+            color: azure;
+            transform: translate(-33px,-100px);
+            transition: 1s;
+            opacity: 0;
+          }
+          .card:hover .view{
+            opacity: 1;
+            transform: translate(-33px,230px);
+            
+          }
+          .view:hover{
+            background: lightseagreen;
+          }
+          span{
+            color: red;
+          }
+          .o{
+            text-decoration: line-through;
+            color: gray;
+          }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="new">New</div>
+        <div class="img">
+            <div class="view"> Quick View </div>`
+        </div>
+        <div class="add"> <span> Mahadev T-Shirt </span><br> $99.00 <span class="o"> $150.00</span></div>
+        <div class="button"> ADD TO CART </div>
+    </div>
+</body>
+</html>
